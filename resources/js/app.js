@@ -9,14 +9,12 @@ import {
     faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import 'animate.css';
 
 library.add(faChevronRight, faChevronLeft);
 
 
-const app =createApp({
-    // el: "#app",
-    // components: { App },
-});
+const app =createApp({});
 
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.component('app', App)

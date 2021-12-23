@@ -5,7 +5,14 @@ module.exports = {
       "./resources/**/*.vue",
     ],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          'twitch': '#6441a5',
+          'twitch-darker': '#503484',
+          'twitch-lighter': '#815fc0',
+          'twitch-text': '#483d8b'
+        }
+      },
     },
     plugins: [],
   }

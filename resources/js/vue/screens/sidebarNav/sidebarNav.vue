@@ -1,7 +1,7 @@
 <template>
     <div>
         <button
-            class="text-red-400 text-3xl box-content"
+            class="text-twitch text-3xl box-content"
             @click="toggleSidebar()"
         >
             <font-awesome-icon icon="chevron-right" class="m-7" />
@@ -10,7 +10,7 @@
             v-bind:class="[
                 { '-translate-x-full': isShow },
                 'absolute',
-                'bg-stone-600',
+                'bg-stone-800',
                 'inset-y-0',
                 'left-0 ',
                 'transform',
@@ -21,7 +21,7 @@
         >
             <div class="w-64">
                 <button
-                    class="text-red-400 text-3xl box-content bg-stone-600"
+                    class="text-twitch text-3xl box-content"
                     @click="toggleSidebar()"
                 >
                     <font-awesome-icon icon="chevron-left" class="m-7" />
