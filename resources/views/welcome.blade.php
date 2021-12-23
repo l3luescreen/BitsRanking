@@ -16,9 +16,13 @@
 
 <body>
     <div id="app" class="bg-stone-900">
-        <app></app>
+        <app />
     </div>
 </body>
+
+
+<!-- Awesome icons -->
+<script src="https://kit.fontawesome.com/6e8149eba2.js" crossorigin="anonymous"></script>
 
 <script src="{{ mix('js/app.js') }}"></script>
 
