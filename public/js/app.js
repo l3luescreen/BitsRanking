@@ -29343,11 +29343,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      isShow: true
+      isShow: false
     };
   },
   methods: {
     toggleSidebar: function toggleSidebar() {
+      console.log(this.isShow);
       this.isShow = !this.isShow;
     }
   }
@@ -29460,13 +29461,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "w-64"
+  "class": "flex flex-col w-96"
 };
+var _hoisted_2 = {
+  "class": "flex justify-between"
+};
+var _hoisted_3 = {
+  "class": "h-full px-2.5 flex flex-col"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "p-2.5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "self-end w-full rounded text-blue-900 border-2 border-blue-900 hover:text-blue-500 hover:border-blue-500 text-2xl py-2.5 px-4"
+}, " Sign in ")], -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_font_awesome_icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("font-awesome-icon");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "text-twitch hover:text-twitch-lighter text-3xl box-content",
+    "class": "absolute text-twitch hover:text-twitch-lighter text-3xl box-content",
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $options.toggleSidebar();
     })
@@ -29475,9 +29491,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "m-7"
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([{
-      '-translate-x-full': $data.isShow
-    }, 'absolute', 'bg-stone-800', 'inset-y-0', 'left-0 ', 'transform', 'transition', 'duration-200', 'ease-in-out'])
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      '-translate-x-full': !$data.isShow
+    }, 'absolute', 'bg-stone-800', 'inset-y-0', 'left-0 ', 'transform', 'transition', 'duration-200', 'ease-in-out', 'flex'])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "text-twitch hover:text-twitch-lighter text-3xl box-content",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $options.toggleSidebar();
@@ -29485,7 +29501,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
     icon: "chevron-left",
     "class": "m-7"
-  })])])], 2
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <button\n                        class=\"\n                            text-twitch\n                            hover:text-twitch-lighter\n                            bg-white\n                            text-3xl\n                            box-content\n                        \"\n                    >\n                        <h1 class=\"m-7\">mode</h1>\n                    </button> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    "class": "w-full rounded text-twitch hover:text-twitch-lighter hover:bg-stone-700 text-2xl py-2.5 px-4",
+    onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $options.toggleSidebar();
+    })
+  }, " Home "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    "class": "w-full rounded text-twitch hover:text-twitch-lighter hover:bg-stone-700 text-2xl py-2.5 px-4",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $options.toggleSidebar();
+    })
+  }, " Stats ")]), _hoisted_4])], 2
   /* CLASS */
   )]);
 }
