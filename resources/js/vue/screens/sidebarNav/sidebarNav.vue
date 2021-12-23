@@ -1,7 +1,7 @@
 <template>
     <div>
         <button
-            class="text-twitch text-3xl box-content"
+            class="text-twitch hover:text-twitch-lighter text-3xl box-content"
             @click="toggleSidebar()"
         >
             <font-awesome-icon icon="chevron-right" class="m-7" />
@@ -21,7 +21,7 @@
         >
             <div class="w-64">
                 <button
-                    class="text-twitch text-3xl box-content"
+                    class="text-twitch hover:text-twitch-lighter text-3xl box-content"
                     @click="toggleSidebar()"
                 >
                     <font-awesome-icon icon="chevron-left" class="m-7" />

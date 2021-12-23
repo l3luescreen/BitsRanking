@@ -1,6 +1,6 @@
 <template>
     <div class="flex min-h-screen relative">
-        <sidebarNav/>
+        <sidebarNav />
         <div class="m-auto">
             <Main />
         </div>
@@ -8,13 +8,12 @@
 </template>
 
 <script>
-
-import Main from './screens/rankingScreen/main'
-import sidebarNav from './screens/sidebarNav/sidebarNav'
+import Main from "./screens/rankingScreen/main";
+import sidebarNav from "./screens/sidebarNav/sidebarNav";
 export default {
     components: {
         Main,
-        sidebarNav
-    }
-}
+        sidebarNav,
+    },
+};
 </script>
